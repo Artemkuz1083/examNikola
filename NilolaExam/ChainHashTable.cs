@@ -33,21 +33,6 @@ namespace NilolaExam
             _table[index].AddFirst(new KeyValuePair<K, V>(key, value));
         }
 
-        public V Search(K key)
-        {
-            int index = GetIndex(key);
-
-            foreach(var pair in _table[index])
-            {
-                if (pair.Key.Equals(key))
-                {
-                    return pair.Value;
-                }
-            }
-
-            throw new KeyNotFoundException();
-        }
-
         public void Print()
         {
             for (int i = 0; i < _table.Length; i++)

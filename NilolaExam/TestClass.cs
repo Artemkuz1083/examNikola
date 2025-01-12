@@ -11,14 +11,11 @@ namespace NilolaExam
 
         public static void Main()
         {
-            //var testArray = new[] {3,1,9,8,11,6};
-            //Console.WriteLine(String.Join(" ",Shell.ShellSort(testArray)));
-            var table = new ChainHashTable<int, int>(5);
-            table.Insert(0, 1);
-            table.Insert(0, 1);
-            table.Insert(0, 2);
-            table.Insert(3, 3);
-            table.Print();
+            var testArray = new[] {3,1,9,6,11,7};
+            var testArray2 = new[] { 1,2,3,4,5,6,7,8,9 };
+            Console.WriteLine(Binary.BinarySearch(testArray2, 833));
+            Console.WriteLine(String.Join(" ",Tree.TreeSort(testArray)));
+      
         }
     }
 }
